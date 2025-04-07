@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SmartStock</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/notification.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .about {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #FFF8F0, #EDE4E0);
+            min-height: calc(100vh - 200px); /* Adjust based on header/footer height */
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-section {
+            background: #FFFFFF;
+            border-radius: 15px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .about-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .about-section h2 {
+            font-size: 2.2rem;
+            color: #6B5B95;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            color: #2A2A2A;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .stepwise-list {
+            list-style: none;
+            text-align: left;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .stepwise-list li {
+            background: #F9F7F4;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 5px solid #9579B5;
+        }
+
+        .stepwise-list h3 {
+            font-size: 1.5rem;
+            color: #6B5B95;
+            margin-bottom: 0.8rem;
+        }
+
+        .cta-link {
+            color: #9579B5;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .cta-link:hover {
+            color: #6B5B95;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            background: #FFFFFF;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card h3 {
+            font-size: 2rem;
+            color: #6B5B95;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card p {
+            font-size: 1rem;
+            color: #2A2A2A;
+            font-weight: 600;
+        }
+
+        /* Dark Mode Adjustments */
+        .dark-mode .about {
+            background: linear-gradient(135deg, #2A2A2A, #1A1A1A);
+        }
+
+        .dark-mode .about-section {
+            background: #333333;
+        }
+
+        .dark-mode .about-section h2 {
+            color: #9579B5;
+        }
+
+        .dark-mode .about-section p {
+            color: #EDE4E0;
+        }
+
+        .dark-mode .stepwise-list li {
+            background: #444444;
+            border-left-color: #A68CCF;
+        }
+
+        .dark-mode .stepwise-list h3 {
+            color: #9579B5;
+        }
+
+        .dark-mode .cta-link {
+            color: #A68CCF;
+        }
+
+        .dark-mode .cta-link:hover {
+            color: #9579B5;
+        }
+
+        .dark-mode .stat-card {
+            background: #333333;
+        }
+
+        .dark-mode .stat-card h3 {
+            color: #9579B5;
+        }
+
+        .dark-mode .stat-card p {
+            color: #EDE4E0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Notification Banner -->
+    <div class="notification-banner">
+        <p>🚀 SmartStock is launching soon! Be the first to experience AI-powered billing & inventory management. <a href="coming-soon.html">Learn More</a></p>
+        <button class="notification-close">✖</button>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">SmartStock</a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="plans.html">Plans</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#login" class="btn-signin">Sign In</a>
+                <button class="theme-toggle">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="about-container">
+            <h1>About SmartStock</h1>
+
+            <!-- Introduction Section -->
+            <div class="about-section">
+                <h2>Our Journey Begins with You</h2>
+                <p>Since 2019, SmartStock has been more than just a tool—it’s a mission born from the heart of retail struggles. We witnessed shopkeepers and small business owners battling sleepless nights, overwhelmed by chaotic inventory, lost profits, and the constant fear of missing sales opportunities. Their stories of hard work, resilience, and unyielding determination inspired us to act. We saw the pain: outdated systems, manual calculations, and the stress of unpredictable cash flows. That’s why we built SmartStock—to transform those challenges into opportunities for growth and peace of mind.</p>
+            </div>
+
+            <!-- Why We Started Section -->
+            <div class="about-section">
+                <h2>Why SmartStock Was Born</h2>
+                <ol class="stepwise-list">
+                    <li>
+                        <h3>Step 1: Observing the Struggle</h3>
+                        <p>We spent countless hours in markets and stores, listening to shopkeepers share their frustrations—inventory mismatches costing thousands, customers walking away due to stockouts, and the burden of tax season. These weren’t just numbers; they were lives impacted by inefficiency.</p>
+                    </li>
+                    <li>
+                        <h3>Step 2: Identifying the Pain Points</h3>
+                        <p>Our research revealed core issues: lack of real-time data, no predictive tools to avoid overstocking or understocking, and the absence of affordable, user-friendly technology. Shop owners deserved better than spreadsheets and guesswork.</p>
+                    </li>
+                    <li>
+                        <h3>Step 3: A Vision for Change</h3>
+                        <p>We envisioned a future where every shopkeeper could focus on their passion—serving customers—rather than drowning in paperwork. With AI at the core, we promised to deliver solutions that save time, boost profits, and restore confidence.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- How We Built It Section -->
+            <div class="about-section">
+                <h2>How We Built SmartStock</h2>
+                <ol class="stepwise-list">
+                    <li>
+                        <h3>Step 1: Collaborating with the Community</h3>
+                        <p>We partnered with hundreds of shopkeepers across 60+ countries, gathering insights to tailor every feature to their real-world needs. Their feedback shaped our AI-driven tools, ensuring practicality and relevance.</p>
+                    </li>
+                    <li>
+                        <h3>Step 2: Innovating with Precision</h3>
+                        <p>Our team of experts leveraged cutting-edge AI to create features like the Smart Profit Calculator and Inventory Recommendations, designed to eliminate guesswork and empower decision-making with data you can trust.</p>
+                    </li>
+                    <li>
+                        <h3>Step 3: Testing for Excellence</h3>
+                        <p>Before launch, we rigorously tested SmartStock with over 15,000 shops, refining it to achieve a 99.9% uptime and a proven 50% profit increase. Your success is our benchmark.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Emotional Appeal and Call to Action -->
+            <div class="about-section">
+                <h2>Join the Revolution</h2>
+                <p>Imagine the relief of knowing your inventory is always optimized, your profits are growing, and your customers are returning because of your personalized service. Shopkeepers like you deserve to thrive, not just survive. SmartStock is your partner in this journey—built with empathy, driven by innovation, and dedicated to your success. Don’t let another day pass with lost opportunities. <a href="plans.html" class="cta-link">Explore our plans now</a> and be part of a movement that’s changing retail, one shop at a time.</p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>15K+</h3>
+                    <p>Shops Empowered Worldwide</p>
+                </div>
+                <div class="stat-card">
+                    <h3>60+</h3>
+                    <p>Countries Trusting Our Vision</p>
+                </div>
+                <div class="stat-card">
+                    <h3>99.9%</h3>
+                    <p>Uptime to Keep You Running</p>
+                </div>
+                <div class="stat-card">
+                    <h3>50%</h3>
+                    <p>Profit Growth for Your Dreams</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>SmartStock</h3>
+                <p>Empowering Retail Since 2019</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="plans.html">Plans</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SmartStock. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
